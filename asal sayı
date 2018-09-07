@@ -1,0 +1,16 @@
+sayi=int(input("Sayı giriniz: "))
+bölen=2
+bayrak=1
+topla=0
+for i in range(1,sayi):
+    if(sayi%bölen==0):
+        sayi/=bölen
+        if(bayrak==1):
+            topla+=bölen
+            print(bölen)
+        bayrak=0
+    else:
+        bayrak=1
+        bölen+=1
+
+print("asal bölenlerin toplamı:", topla)
