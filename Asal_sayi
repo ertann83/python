@@ -1,0 +1,9 @@
+sayi=int(input("Bir sayı giriniz: "))
+asal=1
+for bolen in range(2,sayi):
+    if(sayi%bolen==0):
+        print("Sayınız Asal Değildir!")
+        asal=0
+        break
+    else:
+        print("Sayınız Asaldır")
