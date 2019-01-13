@@ -1,4 +1,4 @@
-class hesapla:
+class Hesapla:
     def __init__(self,a,b):
         self.__a=a
         self.__b=b #bu değeri sınıf kurulurken denetlemek istiyorum
@@ -9,6 +9,7 @@ class hesapla:
     @property
     def a(self):
         return self.__a
+        
     @property
     def b(self):
         return self.__b
@@ -24,6 +25,7 @@ class hesapla:
             return self.__b
         else:
             print("İkinci sayı 0 olamaz.")
+            
 
-bolme=hesapla(30,0)
+bolme=Hesapla(30,0)
 print(bolme.bolme())
