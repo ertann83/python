@@ -1,31 +1,34 @@
 class Hesapla:
+    
     def __init__(self,a,b):
-        self.__a=a
-        self.__b=b #bu değeri sınıf kurulurken denetlemek istiyorum
+        self.__a = a
+        self.__b = b
 
     def bolme(self):
-        return self.__a/self.__b
+        return self.__a / self.__b
 
     @property
     def a(self):
         return self.__a
-        
+
     @property
     def b(self):
         return self.__b
 
     @a.setter
-    def a(self,sayi1):
-        self.__a=sayi1
+    def a(self, sayi1):
+        self.__a = sayi1
 
-    @b.setter  #ikinci sayının 0 olup olmadığı denetleniyor
-    def b(self,sayi2):
-        if(sayi2!=0):
-            self.__b=sayi2
+    @b.setter
+    def b(self, sayi2):
+        if(sayi2 != 0):
+            self.__b = sayi2
             return self.__b
         else:
             print("İkinci sayı 0 olamaz.")
-            
 
-bolme=Hesapla(30,0)
+
+bolme = Hesapla(30,5)
+bolme.a = 20
+bolme.b = 0
 print(bolme.bolme())
