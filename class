@@ -1,7 +1,7 @@
 class hesapla:
     def __init__(self,a,b):
         self.__a=a
-        self.__b=b
+        self.__b=b #bu değeri sınıf kurulurken denetlemek istiyorum
 
     def bolme(self):
         return self.__a/self.__b
