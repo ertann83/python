@@ -1,0 +1,29 @@
+class hesapla:
+    def __init__(self,a,b):
+        self.__a=a
+        self.__b=b
+
+    def bolme(self):
+        return self.__a/self.__b
+
+    @property
+    def a(self):
+        return self.__a
+    @property
+    def b(self):
+        return self.__b
+
+    @a.setter
+    def a(self,sayi1):
+        self.__a=sayi1
+
+    @b.setter
+    def b(self,sayi2):
+        if(sayi2!=0):
+            self.__b=sayi2
+            return self.__b
+        else:
+            print("İkinci sayı 0 olamaz.")
+
+bolme=hesapla(30,0)
+print(bolme.bolme())
