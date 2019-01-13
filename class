@@ -17,7 +17,7 @@ class hesapla:
     def a(self,sayi1):
         self.__a=sayi1
 
-    @b.setter
+    @b.setter  #ikinci sayının 0 olup olmadığı denetleniyor
     def b(self,sayi2):
         if(sayi2!=0):
             self.__b=sayi2
