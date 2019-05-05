@@ -12,6 +12,6 @@ def asal(sayi):
 
 
 topla = 0
-for i in range(2, 14):
+for i in range(2, 100):
     topla = topla + asal(i)
 print(topla)
