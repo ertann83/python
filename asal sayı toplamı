@@ -1,0 +1,17 @@
+def asal(sayi):
+    i=2
+    bayrak=0
+    for i in range(i , sayi):
+        if(sayi%i == 0):
+            bayrak = 1
+    if(bayrak == 0):
+        return sayi
+    else:
+        return 0
+
+
+
+topla = 0
+for i in range(2, 14):
+    topla = topla + asal(i)
+print(topla)
