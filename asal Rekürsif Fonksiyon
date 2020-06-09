@@ -13,4 +13,4 @@ def asal(sayi, bolen=2):
 
 
 sayi = int(input("asalcarpani bulacagimiz sayiyi giriniz:"))
-asal(sayi, bolen=2)
+asal(sayi)
